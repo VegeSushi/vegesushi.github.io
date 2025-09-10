@@ -1,0 +1,54 @@
+body {
+    background-image: url("./backdrop.gif");
+    background-repeat: repeat;
+    background-color: black;
+    color: purple;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 20px;
+}
+
+a:link {
+    color: indianred;
+
+}
+
+a:visited {
+    color:brown;
+}
+
+#marquee-text {
+    font-size: 48px;
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to { visibility: hidden; }
+}
+
+.sub-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    color:darkgray;
+}
+
+.main-content {
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.7);
+    border: 5px dashed darkorchid;
+    text-align: center;
+    color:dodgerblue;
+}
+
+.gif-small {
+    width: 100px;
+    height: auto;
+}
